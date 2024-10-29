@@ -1,17 +1,17 @@
 <informations>
 	<information>
-	<sl no>23</sl no>
-	<name>John Carter</name>
-	<admission date>25/12/2015</admission date>
+			<slno>23</slno>
+			<name>John Carter</name>
+			<admissiondate>25/12/2015</admissiondate>
 	</information>
 	<information>
-	<sl no>29</sl no>
-	<name>Bob Marshal</name>
-	<admission date>13/01/1999</admission date>
+			<slnono>29</slnono>
+			<name>Bob Marshal</name>
+			<admissiondate>13/01/1999</admissiondate>
 	</information>
 	<information>
-	<sl no>35</sl no>
-	<name>Clark Kent</name>
-	<admission date>17/06/2005</admission date>
+			<slno>35</slno>
+			<name>Clark Kent</name>
+			<admissiondate>17/06/2005</admissiondate>
 	</information>
 </informations>
