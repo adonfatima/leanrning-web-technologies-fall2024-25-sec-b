@@ -1,23 +1,23 @@
 <products>
 	<product>
-	<id>11</id>
-	<name>Samsung</name>
-	<unit price>35000</unit ptrice>
-	<stock>50</stock>
-	<status>1</status>
+	  <id>11</id>
+	  <name>Samsung</name>
+	  <unitprice>35000</unitprice>
+	  <stock>50</stock>
+	  <status>1</status>
 	</product>
 	<product>
-	<id>20</id>
-	<name>HTC</name>
-	<unit price>65300</unit ptrice>
-	<stock>35</stock>
-	<status>0</status>
+	  <id>20</id>
+	  <name>HTC</name>
+	  <unitprice>65300</unitprice>
+	  <stock>35</stock>
+	  <status>0</status>
 	</product>
 	<product>
-	<id>11</id>
-	<name>Nokia</name>
-	<unit price>25100</unit ptrice>
-	<stock>100</stock>
-	<status>1</status>
+	  <id>23</id>
+	  <name>Nokia</name>
+	  <unitprice>25100</unitprice>
+	  <stock>100</stock>
+	  <status>1</status>
 	</product>
 </products>
