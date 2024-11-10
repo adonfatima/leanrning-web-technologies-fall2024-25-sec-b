@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Person Profile Form</title>
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      width: 400px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], input[type="email"], input[type="date"] {
+     
+    }
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"], input[type="reset"] {
+      
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <form action="submit_form.php" method="post">
+    <h2>Person Profile</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="blood-group">Blood Group:</label>
+    <select id="blood-group" name="blood-group">
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      </select>
+
+    <label for="degree">Degree:</label>
+    <input type="checkbox" id="ssc" name="degree[]" value="SSC">
+    <label for="ssc">SSC</label>
+    <input type="checkbox" id="hsc" name="degree[]" value="HSC">
+    <label for="hsc">HSC</label>
+    <input type="checkbox" id="bsc" name="degree[]" value="BSC">
+    <label for="bsc">BSC</label>
+    <input type="checkbox" id="msc" name="degree[]" value="MSC">
+
+    <label for="msc">MSC</label>
+
+
+    <label for="name">User Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="photo">Picture:</label>
+    <input type="file" id="photo" name="photo">
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
