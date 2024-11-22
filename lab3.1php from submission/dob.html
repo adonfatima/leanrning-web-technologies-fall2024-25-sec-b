@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>  
+<body>
+
+<form action="dob.php" method="post">
+    Day: <input type="number" name="day" value="<?php if (isset($_POST['day'])) echo htmlspecialchars($_POST['day']); ?>" placeholder="dd" min="1" max="31">
+    Month: <input type="number" name="month" value="<?php if (isset($_POST['month'])) echo htmlspecialchars($_POST['month']); ?>" placeholder="mm" min="1" max="12">
+    Year: <input type="number" name="year" value="<?php if (isset($_POST['year'])) echo htmlspecialchars($_POST['year']); ?>" placeholder="yyyy" min="1900" max="<?php echo date('Y'); ?>">
+    <br><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
