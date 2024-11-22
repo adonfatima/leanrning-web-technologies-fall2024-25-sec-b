@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php
-    $array=array(
-        array(1,2,3),
-        array(4,5,7),
-        array(7,8,9)
-    );
-    for($i=0;$i<3;$i++){
-        for($j=0;$j<3;$j++){
-            echo $array[$i][$j]." ";
-        }
-        echo "<br>";
-    }
-    ?>
+<?php
 
-</body>
-</html>
+$array = [
+    ['1', '2', '3', 'A'],
+    ['B', 'C'],
+    ['1', 'D', 'E', 'F']
+];
+
+
+for ($row = 0; $row < count($array); $row++) {
+    for ($col = 0; $col < count($array[$row]); $col++) {
+        echo $array[$row][$col];
+    }
+    echo "\n";
+}
+
+?>
