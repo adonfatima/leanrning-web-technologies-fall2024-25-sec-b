@@ -18,7 +18,7 @@
             //echo "valid user!";
 
             $_SESSION['abc'] = true;
-            header('location: home.php');
+            header('location: logincheck.html');
         }else{
             echo "Invalid user!";
         }
