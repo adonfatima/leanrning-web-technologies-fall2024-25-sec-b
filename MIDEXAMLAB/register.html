@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h2>Registration</h2>
+    <form action="register.php" method="POST">
+        <label>Id:</label><br>
+        <input type="text" name="id" required><br>
+        
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br>
+        
+        <label>Confirm Password:</label><br>
+        <input type="password" name="confirm_password" required><br>
+        
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br>
+        
+        <label>User Type:</label><br>
+        <input type="radio" name="user_type" value="User" > User
+        <input type="radio" name="user_type" value="Admin"> Admin<br>
+        
+        <button type="submit" name="register">Sign Up</button>
+        <a href="login.php">Sign In</a>
+    </form>
+</body>
+</html>
