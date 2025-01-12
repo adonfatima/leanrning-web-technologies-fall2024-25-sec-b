@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Search (AJAX)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head">Employee Search (AJAX)</h1>
+
+    <form>
+        <input type="text" id="search" placeholder="Search employees by name" onkeyup="ajax()"/> 
+        <p id="msg"></p>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Contact No</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTable">
+        </tbody>
+    </table>
+
+    <script>
+        function ajax() {
+            const name = document.getElementById('search').value;
+
+            if (name === "") {
+                document.getElementById('msg').innerHTML = "Please type a name to search!";
+                document.getElementById('msg').style.color = "red";
+                document.getElementById('employeeTable').innerHTML = ""; // Clear table
+                return;
+            } else {
+                document.getElementById('msg').innerHTML = "";
+            }
+
+            const xhttp = new XMLHttpRequest();
+            xhttp.open('POST', 'search_employee.php', true);
+            xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhttp.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    document.getElementById('employeeTable').innerHTML = this.responseText;
+                }
+            };
+
+            xhttp.send('query=' + encodeURIComponent(name));
+        }
+    </script>
+</body>
+</html>
