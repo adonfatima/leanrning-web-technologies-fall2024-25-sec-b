@@ -76,6 +76,9 @@ if (!isset($_SESSION['user_id'])) {
             <li><a href="latest_blocks.php"><b>Latest Block Insert</b></a></li>
             <li><a href="mine_blocks.php"><b>Mine Block List</b></a></li>
             <li><a href="verify_blocks.php"><b>Verify Block List</b></a></li>
+             <li><a href="sendmoney.php"><b>Send Money</b></a></li>
+             <li><a href="addmoney.php"><b>Add Money</b></a></li>
+             <li><a href="billpayment.php"><b>Bill Payment</b></a></li>
             <li><a href="change_password.php"><b>Change Password</b></a></li>
             
 
